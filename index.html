@@ -8,36 +8,21 @@
 <h1>The Psychic Game</h1>
 
 <p>Guess what letter I'm thinking of....</p>
+
+<p class="win">Wins:</p>
+<p class="loss">Losses:</p>
+<p class= "guessesLeft">Guesses left:</p>
+<p class="lettersGuessed">Guesses so far:</p>
 <!-- Computer chooses a letter
 User makes a guess
 Capture the choices
 Compare, determine a win, loss, # of guesses left, user guesses so far
 Display results to the user -->
 
-<script type="text/javascript">
-
-    var options = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
-
-    document.onkeyup = function() {
-        var userguess = String.fromCharCode(event.keyCode).
-            toLowerCase();
-
-        console.log(userguess);
-
-        var computerGuess = options[Math.floor(Math.random()*options
-            .length)];
-
-        console.log(computerGuess);
-
-    }
-
-    for (var i=0; i<options.length; i++) {
-        console.log(options[i]);
-    }
-
-</script>
 
 
 
+
+<script src="assets/javascript/game.js"></script>
 </body>
 </html> 
